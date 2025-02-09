@@ -738,7 +738,7 @@ article.container::before {
 
 .slider-item {
   min-width: 110px;
-  float: 1 1 100%;
+  flex: 1 1 100%;
 }
 
 .slider-card {
@@ -1135,3 +1135,13 @@ article.container::before {
       gap: 16px;
     }
 }
+
+/**
+  * Responsive for large than 1400px screen
+  */
+
+  @media (min-width: 1400px) {
+    .highlight-list {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
